@@ -4,5 +4,6 @@
 # 基础镜像使用java
 FROM java:8
 # 运行jar包
-EXPOSE 8800
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","/home/app/app.jar"]
+
