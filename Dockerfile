@@ -4,8 +4,5 @@
 # 基础镜像使用java
 FROM java:8
 # 运行jar包
-EXPOSE 8080
-WORKDIR /home/app
-ARG JAR_FILE
-COPY ${JAR_FILE} 
-ENTRYPOINT ["java","-jar"]
+EXPOSE 8800
+ENTRYPOINT ["java","-jar","/home/app/app.jar"]
