@@ -5,5 +5,6 @@
 FROM java:8
 # 运行jar包
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/home/app/app.jar"]
+ADD ./config/* /home/app/config/
+ENTRYPOINT ["java","-jar","/home/app/random-number-service-fenghx-0.0.1-SNAPSHOT.jar"]
 
